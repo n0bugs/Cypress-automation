@@ -1,0 +1,11 @@
+{
+    "baseUrl": "https://b2bnew.develop.toplyvo.app",
+
+    "viewportWidth": 1920,
+    "viewportHeight": 1000,
+    
+    "env": {
+        "allureResultsPath": "./cypress/allure-results"
+    }
+    
+}

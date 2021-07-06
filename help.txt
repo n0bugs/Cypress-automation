@@ -1,0 +1,26 @@
+/// <reference types="cypress-xpath" /> -- include xpath
+
+
+
+npm run generate:html:report -- generate reports
+
+
+npx cypress run --headlesss
+----------------------------------------------------------------------------------------------------
+npm i cypress-parallel --save-dev 
+
+script
+    // "cy:run": "cypress run", 
+    // "cy:parallel" : "cypress-parallel -s cy:run -t 4 -d ./cypress/integration"
+
+
+    npm run cy:parallel
+
+npx cypress run --env allure=true,allureResultsPath=./cypress/allure-results  
+
+allure generate --clean 
+
+jenkins start brew services start jenkins-lts
+
+stop
+http://localhost:8080/exit / brew services stop jenkins-lts
